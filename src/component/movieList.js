@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import UpdateMovie from './updatemovie'
 import { deletemovie } from '../actions/actions'
-import { Link } from 'react-router-dom'
+
 import Rate from './rate'
 
 const movieList = (props) => {

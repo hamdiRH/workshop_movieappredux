@@ -5,7 +5,7 @@ const initialstate = {
     filterbyrate: 1,
     filterbyname: ""
 }
-const reducer = (state = initialstate, action) => {
+export const movieReducer = (state = initialstate, action) => {
     switch (action.type) {
         case ADD_MOVIE: return { ...state, movie: state.movie.concat(action.payload) }
         case DELETE_MOVIE: return { ...state, movie: state.movie.filter(el => el.id !== action.payload) }
@@ -15,4 +15,3 @@ const reducer = (state = initialstate, action) => {
         default: return state
     }
 }
-export default reducer

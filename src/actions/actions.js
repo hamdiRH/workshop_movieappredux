@@ -1,8 +1,4 @@
-import {
-    ADD_MOVIE,
-    DELETE_MOVIE,
-    UPDATE_MOVIE, SEARCH_NAME, SEARCH_RATE
-} from './actiontype'
+import { ADD_MOVIE, DELETE_MOVIE, UPDATE_MOVIE, SEARCH_NAME, SEARCH_RATE } from './actiontype'
 export const searchbyname = (payload) => {
     return {
         type: SEARCH_NAME,

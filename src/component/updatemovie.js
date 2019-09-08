@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import { upadtemovie } from '../actions/actions'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
@@ -29,15 +29,15 @@ class ModalExample extends React.Component {
         this.setState({
             [e.target.name]: e.target.value
         })
-        
+
     }
     updatemovie = () => {
         this.toggle()
         const { id, year, stars, title, img } = this.state
-        const newmovie={
-            id ,
+        const newmovie = {
+            id,
             year,
-            img ,
+            img,
             stars,
             title
         }
@@ -52,7 +52,7 @@ class ModalExample extends React.Component {
                     <ModalHeader toggle={this.toggle}>Update Movie</ModalHeader>
                     <ModalBody>
                         <div className="container">
-                            <h2>Add new movie</h2>
+                            <h2>Update movie</h2>
 
                             <div className="form-group">
                                 <label htmlFor="MovieName">Movie Name</label>
